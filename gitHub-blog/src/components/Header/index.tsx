@@ -6,9 +6,9 @@ import effectLeft from "../../assets/effectLeft.png";
 export function Header() {
 	return (
 		<ContainerHeader>
-			<img src={effectLeft} alt="" />
+			<img src={effectLeft} alt="" className="left" />
 			<Logo src={logoImg} />
-			<img src={effectRight} alt="" />
+			<img src={effectRight} alt="" className="right" />
 		</ContainerHeader>
 	);
 }

@@ -6,7 +6,7 @@ export const ContainerUserProfile = styled.div`
   box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 
-  margin-top: -2rem;  
+  margin-top: -5rem;  
 `
 
 export const Content = styled.div`
@@ -19,6 +19,7 @@ export const Content = styled.div`
 
 
 export const ContentUserProfile = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,12 +27,14 @@ export const ContentUserProfile = styled.div`
 `
 
 export const ContainerBio = styled.div`
+  width: 100%;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    gap: 0.5rem;
 
-  div {
+  header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +51,10 @@ export const ContainerBio = styled.div`
       color: ${props => props.theme["blue"]};
       text-transform: uppercase;
       line-height: 1.6;
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
 
@@ -66,6 +73,18 @@ export const ContainerInfo = styled.div`
 `
 
 export const Info = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .icon {
+    color: ${props => props.theme["base-label"]};
+  }
+
+  span {
+    color: ${props => props.theme["base-subtitle"]};
+    line-height: 1.6;
+  }
 `
 
 export const Avatar = styled.img`

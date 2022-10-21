@@ -11,6 +11,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Nunito', 'sans-serif';
     background: ${props => props.theme["base-background"]};
     -webkit-font-smoothing: antialiased;
+
+    margin-bottom: 12rem;
   }
 
   body, input, textarea, button {
