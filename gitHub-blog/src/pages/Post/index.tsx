@@ -27,6 +27,7 @@ export function Post() {
 	const [post, setPost] = useState<PostType | undefined>();
 
 	useEffect(() => {
+		window.scrollTo(0, 0);
 		const FetchBlogPost = async () => {
 			const response = await axios.get(
 				`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_BLOG_REPO}/issues/${id}`

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { GitContext } from "../../context/GitContext";
 import { CardPost } from "./CardPost";
 import { SearchInput } from "./SearchInput";
@@ -8,6 +8,10 @@ import { UserProfile } from "./UserProfile";
 export function Home() {
 	const { issuesBlog } = useContext(GitContext);
 	console.log(issuesBlog);
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<ContainerHome>
 			<UserProfile />
